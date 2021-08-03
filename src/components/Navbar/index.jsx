@@ -1,4 +1,4 @@
-import styles from "./Navbar.modules.css";
+import styles from "./Navbar.module.css";
 
 import newsIcon from "../../assets/news-icon.svg";
 
