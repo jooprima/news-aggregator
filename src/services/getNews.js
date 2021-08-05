@@ -6,7 +6,7 @@ const NEWS_API_KEY = process.env.REACT_APP_API_KEY;
 export const getNews = async ({ searchQuery = "technology" }) => {
   try {
     const path = "/everything";
-    const query = `$q=${searchQuery}&apiKey=${NEWS_API_KEY}`;
+    const query = `?q=${searchQuery}&apiKey=${NEWS_API_KEY}`;
     const endPointURL = `${NEWS_API_BASE_URL}${path}${query}`;
 
     const res = await axios.get(endPointURL);
